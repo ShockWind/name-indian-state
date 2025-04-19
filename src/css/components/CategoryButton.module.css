@@ -1,4 +1,5 @@
 @import url("/node_modules/open-props/colors.min.css");
+@import url("/node_modules/open-props/shadows.min.css");
 
 .button {
     background-color: var(--blue-5);
@@ -13,12 +14,12 @@
 
     &:hover {
         background-color: var(--blue-6);
-        border-color: var(--blue-8);
+        box-shadow: var(--inner-shadow-1);
     }
 
     &:active, &.selected {
         background-color: var(--blue-7);
-        border-color: var(--blue-9);
+        box-shadow: var(--inner-shadow-1);
     }
 
 }

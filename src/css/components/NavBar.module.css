@@ -1,7 +1,9 @@
 @import url("/node_modules/open-props/colors.min.css");
-
+@import url("/node_modules/open-props/shadows.min.css");
 .navbar {
     background-color: var(--blue-6);
+    box-shadow: var(--shadow-1);
+    z-index: 3;
     height: 3rem;
     display: flex;
     align-items: center;
@@ -22,17 +24,18 @@
     padding-inline: 1rem;
     background-color: var(--blue-5);
     color: var(--gray-0);
-    border: 2px solid var(--blue-7);
+    border: 1px solid var(--blue-7);
+    box-shadow: var(--shadow-1);
     font-size: large;
     border-radius: 5rem;
 
     &:hover {
         background-color: var(--blue-6);
-        border-color: var(--blue-8);
+        box-shadow: var(--shadow-2);
     }
 
     &:active {
         background-color: var(--blue-7);
-        border-color: var(--blue-9);
+        box-shadow: var(--shadow-2);
     }
 }
