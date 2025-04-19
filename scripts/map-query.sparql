@@ -1,0 +1,10 @@
+SELECT DISTINCT ?itemLabel ?mapURL {
+    ?item   wdt:P131            wd:Q668;
+            wdt:P31/wdt:P279*   wd:Q10864048;
+            wdt:P242            ?mapURL.
+    # Exclude historical entries
+    FILTER NOT EXISTS { ?item wdt:P576 ?abolished. }
+    # Exclude SevenSisterStates.svg of Manipur (Q1193) and include IN-AP.svg of Andhra Pradesh (Q1159)
+    FILTER (CONTAINS(STR(?mapURL), "India") || CONTAINS(STR(?mapURL), "IN"))
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}

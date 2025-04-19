@@ -1,41 +1,12 @@
-import { useState } from "react";
-import appLogo from "/favicon.svg";
-import PWABadge from "./PWABadge.tsx";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import MarkedMap from './components/MarkedMap.tsx';
+import PWABadge from "./components/PWABadge.tsx";
+import "./css/App.css";
+
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <>
-            <div>
-                <a href="https://vite.dev" target="_blank" rel="noreferrer">
-                    <img src={appLogo} className="logo" alt="geoinapp logo" />
-                </a>
-                <a href="https://react.dev" target="_blank" rel="noreferrer">
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
-            </div>
-            <h1>geoinapp</h1>
-            <div className="card">
-                <button
-                    type="button"
-                    onClick={() => setCount((count) => count + 1)}
-                >
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
+            <MarkedMap value='West Bengal' />
             <PWABadge />
         </>
     );

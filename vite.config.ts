@@ -1,6 +1,7 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
+import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,6 +18,7 @@ export default defineConfig({
     },
     plugins: [
         react(),
+        svgr(),
         VitePWA({
             registerType: "autoUpdate",
             injectRegister: false,
@@ -39,6 +41,7 @@ export default defineConfig({
                 globPatterns: ["**/*.{js,css,html,svg,png,ico}"],
                 cleanupOutdatedCaches: true,
                 clientsClaim: true,
+                maximumFileSizeToCacheInBytes: 5_000_000,
             },
 
             devOptions: {

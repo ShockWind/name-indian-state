@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        "stardog-union.vscode-langserver-sparql",
+        "biomejs.biome"
+    ]
+}

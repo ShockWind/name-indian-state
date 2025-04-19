@@ -21,6 +21,9 @@
         "enabled": true,
         "rules": {
             "recommended": true,
+            "correctness": {
+                "noUnknownMediaFeatureName": "off"
+            },
             "nursery": {
                 "useComponentExportOnlyModules": {
                     "level": "warn",
