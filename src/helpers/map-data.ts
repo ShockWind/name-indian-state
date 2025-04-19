@@ -22,4 +22,4 @@ export const mapData = Object.fromEntries(
     ]),
 );
 console.log(mapData);
-export const mapKeys = Object.keys(mapData);
+export const mapKeys = Object.keys(mapData).sort();

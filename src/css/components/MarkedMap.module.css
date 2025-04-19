@@ -1,9 +1,13 @@
 @import url("/node_modules/open-props/sizes.min.css");
 
 .svg {
-    height: 70vh;
-    width: 30rem;
+    min-height: 50vh;
+    width: 100%;
     background-color: #c8ebff;
+}
+
+.svgAltColor {
+    background-color: #F9F9F9;
 }
 
 @media (480px <= width < 768px) {

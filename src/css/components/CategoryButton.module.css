@@ -1,0 +1,27 @@
+@import url("/node_modules/open-props/colors.min.css");
+
+.button {
+    background-color: var(--blue-5);
+    color: var(--gray-0);
+    border: 1px solid var(--blue-6);
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: large;
+    height: 2.5rem;
+    width: 2rem;
+    /* 100 / 9, since there's total 18 letters */
+    flex-basis: 11.1%;
+
+    &:hover {
+        background-color: var(--blue-6);
+        color: var(--gray-1);
+        border: 1px solid var(--blue-7);
+    }
+
+    &:active, &.selected {
+        background-color: var(--blue-7);
+        color: var(--gray-2);
+        border: 1px solid var(--blue-8);
+    }
+}
