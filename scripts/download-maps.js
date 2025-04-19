@@ -17,7 +17,7 @@ const queryScript = await readFile(
 const queryURL = wbk.sparqlQuery(queryScript);
 // https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy
 const headers = {
-    "User-Agent": "GeoinappStartupBot/0.0 (https//geoinapp.pages.dev)",
+    "User-Agent": "NameIndianStateStartupBot/0.0 (https//nameindianstate.pages.dev)",
 };
 const mapData = simplifySparqlResults(
     await fetch(queryURL, { headers }).then((response) => response.json())

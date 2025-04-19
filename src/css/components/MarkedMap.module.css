@@ -10,9 +10,3 @@
     background-color: #F9F9F9;
 }
 
-@media (480px <= width < 768px) {
-    .svg {
-        height: 70vh;
-        width: 90vw;
-    }
-}

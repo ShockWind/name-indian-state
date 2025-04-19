@@ -29,10 +29,10 @@ export default defineConfig({
             },
 
             manifest: {
-                name: "geoinapp",
-                short_name: "geoinapp",
+                name: "Name Indian State",
+                short_name: "name-indian-state",
                 description:
-                    "A gamified webapp to learn the names, positions, and shapes of India's states & union territories. ",
+                    "A quiz webapp about naming India's states & union territories from shown map.",
                 theme_color: "#1971c2",
                 background_color: "#212529",
             },
