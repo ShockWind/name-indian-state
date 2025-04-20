@@ -1,6 +1,6 @@
 # Name Indian State
 
-A quiz webapp about naming India's states & union territories from shown map.
+This is a quiz webapp about naming India's states & union territories from shown map.
 
 <https://name-indian-state.pages.dev/>
 
@@ -24,3 +24,4 @@ A quiz webapp about naming India's states & union territories from shown map.
 - Run `pnpm run download-maps` to download the latest maps.
 - Run `pnpm run dev` to launch a development preview.
 - Open the dev server link in your browser
+
