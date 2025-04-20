@@ -1,11 +1,12 @@
-import { useAtomValue } from "jotai";
+import { useAtomValue, useSetAtom } from "jotai";
 import styles from "../css/components/AnswersPanel.module.css";
-import { selectionAtom, UNSELECTED } from "../helpers/atoms";
+import { currentAnswerAtom, letterAtom, UNSELECTED } from "../helpers/atoms";
 import { useMemo } from "react";
 import { mapKeys } from "../helpers/map-data";
 
 function AnswersPanel() {
-    const selectedLetter = useAtomValue(selectionAtom);
+    const selectedLetter = useAtomValue(letterAtom);
+    const setAnswer = useSetAtom(currentAnswerAtom);
     const optionList = useMemo(
         () => mapKeys.filter((item) => item.startsWith(selectedLetter)),
         [selectedLetter],
@@ -22,6 +23,7 @@ function AnswersPanel() {
                         key={item}
                         type="button"
                         className={styles.answerButton}
+                        onClick={() => setAnswer(item)}
                     >
                         {item}
                     </button>

@@ -2,6 +2,7 @@
 
 .svg {
     min-height: 50vh;
+    max-height: 50vh;
     width: 100%;
     background-color: #c8ebff;
 }

@@ -21,6 +21,9 @@ importers:
       open-props:
         specifier: ^1.7.15
         version: 1.7.15
+      random:
+        specifier: ^5.3.0
+        version: 5.3.0
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -1953,6 +1956,10 @@ packages:
 
   quansync@0.2.10:
     resolution: {integrity: sha512-t41VRkMYbkHyCYmOvx/6URnN80H7k4X0lLdBMGsz+maAwrJQYB1djpV6vHrQIBE0WBSGqhtEHrK9U3DWWH8v7A==}
+
+  random@5.3.0:
+    resolution: {integrity: sha512-Gm/L+xTpi1V+//XbnTnvRRlSsbHxJv+AeC1RzqaFLbWwXL8m+bvf6iM0+M+yQoAH8dmcWcZHmP/VZtOu5Zk2DQ==}
+    engines: {node: '>=18'}
 
   randombytes@2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
@@ -4367,6 +4374,8 @@ snapshots:
   punycode@2.3.1: {}
 
   quansync@0.2.10: {}
+
+  random@5.3.0: {}
 
   randombytes@2.1.0:
     dependencies:
