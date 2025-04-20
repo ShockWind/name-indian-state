@@ -1,13 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Name Indian State</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Name Indian State</title>
+        <style>
+            body {
+                background-color: #e7f5ff;
+            }
+            #loader {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                width: 100vw;
+            }
+            #loader-icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 8px solid;
+                border-color: #e9ecef;
+                border-right-color: #339af0;
+                animation: spin 1s infinite linear;
+            }
+
+            @keyframes spin {
+                to {
+                    transform: rotate(1turn);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root">
+            <div id="loader">
+                <span id="loader-icon" aria-label="Loading..."></span>
+            </div>
+        </div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
 </html>
