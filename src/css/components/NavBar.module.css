@@ -8,8 +8,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 1rem;
+    padding-inline: 0.5rem;
     flex-shrink: 0;
+}
+
+.titleContainer {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
@@ -17,6 +24,11 @@
     font-size: large;
     color: var(--blue-0);
     font-weight: bold;
+}
+
+.logo {
+    height: 2rem;
+    width: 2rem;
 }
 
 .restartButton {
