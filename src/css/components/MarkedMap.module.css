@@ -3,7 +3,7 @@
 .svg {
     min-height: 50vh;
     max-height: 50vh;
-    width: 100%;
+    width: min(100%, 800px);
     background-color: #c8ebff;
 }
 
