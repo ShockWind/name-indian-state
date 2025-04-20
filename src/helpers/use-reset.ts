@@ -1,12 +1,12 @@
 import { useSetAtom } from "jotai";
+import random from "random";
 import {
-    expectedAnswerAtom,
-    currentAnswerAtom,
-    letterAtom,
     UNSELECTED,
+    currentAnswerAtom,
+    expectedAnswerAtom,
+    letterAtom,
 } from "./atoms";
 import { mapKeys } from "./map-data";
-import random from "random";
 
 export default function useReset() {
     const setNextQuestion = useSetAtom(expectedAnswerAtom);

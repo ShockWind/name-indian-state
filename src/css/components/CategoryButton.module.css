@@ -17,9 +17,9 @@
         box-shadow: var(--inner-shadow-1);
     }
 
-    &:active, &.selected {
+    &:active,
+    &.selected {
         background-color: var(--blue-7);
         box-shadow: var(--inner-shadow-1);
     }
-
 }

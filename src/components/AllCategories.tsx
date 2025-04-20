@@ -1,6 +1,6 @@
+import styles from "../css/components/AllCategories.module.css";
 import { mapKeys } from "../helpers/map-data";
 import CategoryButton from "./CategoryButton";
-import styles from "../css/components/AllCategories.module.css";
 
 const letters = [...new Set(mapKeys.map((name) => name[0]))];
 

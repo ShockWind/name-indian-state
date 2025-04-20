@@ -1,6 +1,6 @@
-import { WBK, simplifySparqlResults } from "wikibase-sdk";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
+import { WBK, simplifySparqlResults } from "wikibase-sdk";
 
 const wbk = WBK({
     instance: "https://www.wikidata.org",
@@ -11,16 +11,17 @@ const queryScript = await readFile(
     resolve(import.meta.dirname, "map-query.sparql"),
     {
         encoding: "utf-8",
-    }
+    },
 );
 // https://github.com/maxlath/wikibase-sdk/blob/HEAD/docs/sparql_query.md
 const queryURL = wbk.sparqlQuery(queryScript);
 // https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy
 const headers = {
-    "User-Agent": "NameIndianStateStartupBot/0.0 (https//nameindianstate.pages.dev)",
+    "User-Agent":
+        "NameIndianStateStartupBot/0.0 (https//nameindianstate.pages.dev)",
 };
 const mapData = simplifySparqlResults(
-    await fetch(queryURL, { headers }).then((response) => response.json())
+    await fetch(queryURL, { headers }).then((response) => response.json()),
 );
 // create outputDir if it doesn't exist
 await mkdir(outputDir, { recursive: true });
@@ -31,7 +32,7 @@ await Promise.allSettled(
         // handle National Capital Territory of Delhi https://www.wikidata.org/wiki/Q9357528
         const itemLabel = itemLabelRaw.replace(
             /National Capital Territory of /,
-            ""
+            "",
         );
         const filePath = resolve(outputDir, `${itemLabel}.svg`);
         const result = await fetch(mapURL, { headers })
@@ -39,8 +40,8 @@ await Promise.allSettled(
             .then((response) => new Uint8Array(response));
         console.log(`Downloading ${mapURL} to ${filePath}`);
         await writeFile(filePath, result);
-        console.log(`Finished downloading map for ${itemLabel}`)
-    })
+        console.log(`Finished downloading map for ${itemLabel}`);
+    }),
 );
 
 console.log("Finished downloading all maps");

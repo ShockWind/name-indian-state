@@ -7,9 +7,9 @@ import NavBar from "./components/NavBar.tsx";
 import PWABadge from "./components/PWABadge.tsx";
 import "./css/App.css";
 import {
+    UNSELECTED,
     currentAnswerAtom,
     expectedAnswerAtom,
-    UNSELECTED,
 } from "./helpers/atoms.ts";
 
 function App() {

@@ -1,4 +1,4 @@
-import type { FC, ComponentProps } from "react";
+import type { ComponentProps, FC } from "react";
 
 // https://github.com/pd4d10/vite-plugin-svgr/blob/cef5adead59da0abfc0b81edf4b2022b193e4607/client.d.ts
 type SVGComponent = FC<

@@ -1,7 +1,7 @@
 import { useAtomValue, useSetAtom } from "jotai";
-import styles from "../css/components/AnswersPanel.module.css";
-import { currentAnswerAtom, letterAtom, UNSELECTED } from "../helpers/atoms";
 import { useMemo } from "react";
+import styles from "../css/components/AnswersPanel.module.css";
+import { UNSELECTED, currentAnswerAtom, letterAtom } from "../helpers/atoms";
 import { mapKeys } from "../helpers/map-data";
 
 function AnswersPanel() {

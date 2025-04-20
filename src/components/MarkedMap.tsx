@@ -1,6 +1,6 @@
-import { mapData } from "../helpers/map-data";
-import styles from "../css/components/MarkedMap.module.css";
 import clsx from "clsx";
+import styles from "../css/components/MarkedMap.module.css";
+import { mapData } from "../helpers/map-data";
 
 function MarkedMap({ value }: { value: string }) {
     const MapComponent = mapData[value];
