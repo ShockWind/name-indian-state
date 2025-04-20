@@ -5,7 +5,6 @@ import DialoguePanel from "./components/DialoguePanel.tsx";
 import MarkedMap from "./components/MarkedMap.tsx";
 import NavBar from "./components/NavBar.tsx";
 import PWABadge from "./components/PWABadge.tsx";
-import "./css/App.css";
 import {
     UNSELECTED,
     currentAnswerAtom,
