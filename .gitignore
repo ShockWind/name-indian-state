@@ -12,7 +12,6 @@ dist
 dist-ssr
 dev-dist
 *.local
-src/assets/maps
 
 # Editor directories and files
 .vscode/*

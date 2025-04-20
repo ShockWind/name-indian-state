@@ -7,7 +7,7 @@
         "node": ">=22"
     },
     "scripts": {
-        "prebuild": "node ./scripts/download-maps.js",
+        "download-maps": "node ./scripts/download-maps.js",
         "dev": "vite",
         "build": "tsc -b && vite build",
         "format": "biome format .",
