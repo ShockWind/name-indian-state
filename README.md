@@ -19,8 +19,8 @@ This is a quiz webapp about naming India's states & union territories from shown
 ## Setup instructions
 
 - Install [PNPM](https://pnpm.io/), [Node.js](https://nodejs.org/), and [Git](https://git-scm.com/).
-- Clone the repository using gh repo clone `ShockWind/name-indian-state`
--  Enter its directory using cd `name-indian-state`
+- Clone the repository using `gh repo clone ShockWind/name-indian-state`
+-  Enter its directory using `cd name-indian-state`
 - Run `pnpm install` to set up dependencies.
 - Run `pnpm run download-maps` to download the latest maps.
 - Run `pnpm run dev` to launch a development preview.
