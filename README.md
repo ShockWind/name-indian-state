@@ -28,7 +28,7 @@ This is a quiz webapp about naming India's states & union territories from shown
 
 ## Licenses
 
-All the map images are sources from Wikimedia Foundation through this [Wikidata query](https://w.wiki/DrRc) and Licensed under [Creative Commons Attribution-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/deed.en) and [Creative Commons Attribution-Share Alike 3.0 Germany](https://en.wikipedia.org/wiki/en:Creative_Commons) licenses. See [scripts/map-query.sparql](scripts/map-query.sparql).
+All the map images are sourced from Wikimedia Foundation through this [Wikidata query](https://w.wiki/DrRc) and Licensed under [Creative Commons Attribution-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/deed.en) and [Creative Commons Attribution-Share Alike 3.0 Germany](https://en.wikipedia.org/wiki/en:Creative_Commons) licenses. See [scripts/map-query.sparql](scripts/map-query.sparql).
 
 This project itself is licensed under [MIT](LICENSE).
 
