@@ -15,6 +15,16 @@ export default defineConfig({
     },
     build: {
         cssMinify: "lightningcss",
+        rollupOptions: {
+            output: {
+                manualChunks(id) {
+                    if (id.includes(".svg")) {
+                        return id.replace(/.+\/(.+?)\.svg/, "$1");
+                    }
+                    return "index";
+                },
+            },
+        },
     },
     plugins: [
         react(),
